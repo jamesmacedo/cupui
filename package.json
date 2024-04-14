@@ -1,0 +1,22 @@
+{
+    "name": "cupui",
+    "version": "0.0.1",
+    "description": "What about format your raw JSON data to an formatted output easily? Cupui implements a schema system to help you format your json output",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "dist/main.js",
+    "types": "dist/main.d.js",
+    "scripts": {
+        "build": "rm dist/* && tsc"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/Factory.js"
+        }
+    },
+    "dependencies": {
+        "typescript": "^5.4.5"
+    }
+}
