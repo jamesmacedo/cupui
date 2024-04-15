@@ -3,6 +3,8 @@
         "src"
     ],
     "compilerOptions":{
+        "noEmit":true,
+        "declarationDir": "dist/dts",
         "outDir":"dist",
         "module":"es6",
         "target":"es6",

@@ -6,17 +6,25 @@
     "files": [
         "dist"
     ],
-    "main": "dist/main.js",
+    "main": "dist/fatory.es.js",
+    "module": "dist/fatory.cjs.js",
     "types": "dist/main.d.js",
     "scripts": {
-        "build": "rm dist/* && tsc"
+        "build": "rollup -c rollup.config.js"
     },
     "exports": {
         ".": {
-            "import": "./dist/Factory.js"
+            "require": "./dist/factory.cjs.js",
+            "import": "./dist/factory.es.js"
         }
     },
     "dependencies": {
+        "@rollup/plugin-typescript": "^11.1.6",
+        "rollup": "^4.14.2",
         "typescript": "^5.4.5"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^25.0.7",
+        "tslib": "^2.6.2"
     }
 }
