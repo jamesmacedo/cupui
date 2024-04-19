@@ -1,0 +1,12 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type":"module",
+  "scripts": {
+      "dev":"node --es-module-specifier-resolution=node --no-warnings main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

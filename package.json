@@ -6,8 +6,8 @@
     "files": [
         "dist"
     ],
-    "main": "dist/fatory.es.js",
-    "module": "dist/fatory.cjs.js",
+    "main": "dist/factory.es.js",
+    "module": "dist/factory.cjs.js",
     "types": "dist/main.d.js",
     "scripts": {
         "build": "rollup -c rollup.config.js"
