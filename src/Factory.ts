@@ -21,9 +21,16 @@ class Factory{
                 var valor:any = obj[chave];
                 if(chave === this.currentKey.parts[0]){
                     if(this.currentKey.parts.length > 0){
+
                         if(typeof valor === 'object'){
                             this.currentKey.previous = this.currentKey.parts.shift()
+                            // check if the current item is an array, this step is necessary due the need to iterate through the array to find the provided index
                             if(Array.isArray(valor)){
+                                // check whether the current item position is the last one then return  
+                                if (this.currentKey.parts.length == 0){
+                                    return valor
+                                }
+
                                 valor = valor[this.currentKey.parts[0]] 
                                 this.currentKey.previous = this.currentKey.parts.shift()
                             }
@@ -64,7 +71,6 @@ class Factory{
         if(typeof data !== 'object'){
             console.log('Please provide a JSON')
         }
-        //TODO: understand about object ans arrays of objects in typescript 
         var d: {[key:string]: object| null;} = {}
         for(const chave in this.sch){ 
             this.currentKey = this.key(this.sch[chave]);
