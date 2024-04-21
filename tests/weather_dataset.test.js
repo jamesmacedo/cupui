@@ -1,4 +1,4 @@
-const Factory = require('../dist/factory.cjs.js') 
+const Factory = require('../dist/cupui.cjs.js') 
 const data = require('./data/weather.json') 
 
 const cupui = new Factory()

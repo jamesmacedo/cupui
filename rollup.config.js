@@ -2,14 +2,14 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 
 export default {
-	input: 'src/Factory.ts',
+	input: 'src/Cupui.ts',
 	output: [
         {
-            file: 'dist/factory.cjs.js',
+            file: 'dist/cupui.cjs.js',
             format: 'cjs'
         },
         {
-            file: 'dist/factory.es.js',
+            file: 'dist/cupui.es.js',
             format: 'es'
         },
     ],
