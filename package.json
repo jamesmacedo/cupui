@@ -2,12 +2,12 @@
     "name": "cupui-json",
     "version": "0.0.1",
     "description": "What about format your raw JSON data to an formatted output easily? Cupui implements a schema system to help you format your json output",
-    "type": "module",
+    "type":"module",
     "files": [
         "dist"
     ],
-    "main": "dist/cupui.es.js",
-    "module": "dist/cupui.cjs.js",
+    "main": "dist/cupui.cjs",
+    "module": "dist/cupui.mjs",
     "types": "dist/main.d.js",
     "scripts": {
         "build": "rollup -c rollup.config.js",
@@ -17,8 +17,8 @@
     },
     "exports": {
         ".": {
-            "require": "./dist/cupui.cjs.js",
-            "import": "./dist/cupui.es.js"
+            "require": "./dist/cupui.cjs",
+            "import": "./dist/cupui.mjs"
         }
     },
     "dependencies": {

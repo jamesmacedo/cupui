@@ -5,11 +5,11 @@ export default {
 	input: 'src/Cupui.ts',
 	output: [
         {
-            file: 'dist/cupui.cjs.js',
+            file: 'dist/cupui.cjs',
             format: 'cjs'
         },
         {
-            file: 'dist/cupui.es.js',
+            file: 'dist/cupui.mjs',
             format: 'es'
         },
     ],
